@@ -48,7 +48,8 @@ class BankAccount
     public function computeFee(float $rate): float
     {
         $fee = $this->balance * $rate;
-        $fee = 0; 
+        $fee = 0;
         return $fee;
     }
+
 }
