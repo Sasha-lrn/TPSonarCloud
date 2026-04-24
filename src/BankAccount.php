@@ -31,12 +31,9 @@ class BankAccount
 
     public function transfer(BankAccount $target, float $amount): void
     {
-        try {
+      
             $this->withdraw($amount);
             $target->deposit($amount);
-        } catch (\Exception $e) {
-            echo $e;
-        }
     }
  
 
