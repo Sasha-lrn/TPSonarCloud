@@ -1,1 +1,1 @@
-{"version":2,"defects":[],"times":{"BankAccountTest::testDepot":0.002,"BankAccountTest::testWithdraw":0,"BankAccountTest::testBalance":0}}
+{"version":2,"defects":{"BankAccountTest::testComputeFee":7,"BankAccountTest::testTransfer":7},"times":{"BankAccountTest::testDepot":0.002,"BankAccountTest::testWithdraw":0,"BankAccountTest::testBalance":0,"BankAccountTest::testComputeFee":0,"BankAccountTest::testTransfer":0}}
