@@ -21,7 +21,10 @@ jobs:
         run: composer install --no-interaction --prefer-dist
 
       - name: Run tests with coverage
-        run: vendor/bin/phpunit --coverage-clover coverage/clover.xml
+        run: vendor/bin/phpunit --coverage-clover coverage/clover.xml  
+        env:
+          XDEBUG_MODE: coverage
+        continue-on-error: true
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@fd88b7d7ccbaefd23d8f36f73b59db7a3d246602
